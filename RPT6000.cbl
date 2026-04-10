@@ -42,11 +42,13 @@
 
        WORKING-STORAGE SECTION.
 
-       01 SWITCHES.
-          05 CUSTMAST-EOF-SWITCH      PIC X            VALUE "N".
-             88 CUSTMAST-EOF                           VALUE "Y".
-          05 FIRST-RECORD-SWITCH      PIC X            VALUE "Y".
-             88 FIRST-RECORD                           VALUE "Y".
+       01  SWITCHES.
+           05 SALESREP-EOF-SWITCH    PIC X VALUE "N".
+              88 SALESREP-EOF        VALUE "Y".
+           05 CUSTMAST-EOF-SWITCH    PIC X VALUE "N".
+              88 CUSTMAST-EOF        VALUE "Y".
+           05 FIRST-RECORD-SWITCH    PIC X VALUE "Y".
+              88 FIRST-RECORD        VALUE "Y" FALSE "N".
 
        01 PRINT-FIELDS.
           05 PAGE-COUNT               PIC S9(3)        VALUE ZERO.
